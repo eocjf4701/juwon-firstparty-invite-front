@@ -22,7 +22,7 @@ const DateLocation: React.FC<DateLocationProps> = ({ date, venue, address }) => 
         rel="noopener noreferrer"
         className="mt-2 inline-block bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition-all"
       >
-        🗺️ 돌잔치 위치 찾기
+        🗺️ 위치 찾기
       </a>
     </div>
   );
