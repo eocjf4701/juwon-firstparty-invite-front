@@ -1,19 +1,8 @@
-import { useState } from "react";
 import DateLocation from "./components/DateLocation"; 
 import RSVP from "./components/RSVP";
+import ContactButtons from "./components/ContactButtons";
 
 const App: React.FC = () => {
-  const [rsvp, setRsvp] = useState<"yes" | "no" | null>(null);
-
-  const handleRsvp = (response: "yes" | "no") => {
-    setRsvp(response);
-    fetch("http://localhost:8080/api/rsvp", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ response }),
-    });
-  };
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-purple-100 p-4">
       <div className="relative bg-white max-w-md w-full p-6 rounded-3xl shadow-xl transform rotate-2">
@@ -23,6 +12,9 @@ const App: React.FC = () => {
         </h1>
         <p className="text-center text-gray-600">소중한 순간을 함께하고 싶어요.</p>
 
+        {/* 연락처 & 문의 버튼 */}
+        <ContactButtons />
+        
         {/* 날짜 & 장소 컴포넌트 */}
         <DateLocation 
           date="2025년 7월 5일 (토) 낮 12시" 
