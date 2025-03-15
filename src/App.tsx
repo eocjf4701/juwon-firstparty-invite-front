@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import DateLocation from "./components/DateLocation"; 
 
 const App: React.FC = () => {
   const [rsvp, setRsvp] = useState<"yes" | "no" | null>(null);
@@ -20,16 +21,14 @@ const App: React.FC = () => {
         <h1 className="text-center text-3xl font-bold text-purple-600 mb-2">
           우리 아기의 첫 번째 생일! 🎉
         </h1>
-        <p className="text-center text-gray-600">
-          소중한 순간을 함께하고 싶어요.  
-        </p>
+        <p className="text-center text-gray-600">소중한 순간을 함께하고 싶어요.</p>
 
-        {/* 날짜 & 장소 */}
-        <div className="mt-4 text-center text-gray-700">
-          📍 <strong>서울 강남구 어딘가</strong>  
-          <br />
-          📅 <strong>2025년 4월 20일 (일) 오후 6시</strong>
-        </div>
+        {/* 날짜 & 장소 컴포넌트 */}
+        <DateLocation 
+          date="2025년 7월 5일 (토) 낮 12시" 
+          venue="고양 파티플라" 
+          address="경기도 고양시 덕양구 화정동 123-45"
+        />
 
         {/* 사진 꾸미기 */}
         <div className="relative flex justify-center mt-6">
