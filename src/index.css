@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 손글씨 느낌의 폰트 추가 */
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+body {
+  font-family: "Jua", sans-serif;
+  background: linear-gradient(135deg, #f9f1ff 25%, #fff 100%);
+}
