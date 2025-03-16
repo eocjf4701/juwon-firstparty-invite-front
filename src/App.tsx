@@ -1,6 +1,7 @@
 import DateLocation from "./components/DateLocation"; 
 import RSVP from "./components/RSVP";
-import ContactButtons from "./components/ContactButtons";
+import Footer from "./components/Footer";
+import KakaoShare from "./components/KakaoShare";
 
 const App: React.FC = () => {
   return (
@@ -12,15 +13,18 @@ const App: React.FC = () => {
         </h1>
         <p className="text-center text-gray-600">소중한 순간을 함께하고 싶어요.</p>
 
-        {/* 연락처 & 문의 버튼 */}
-        <ContactButtons />
-        
         {/* 날짜 & 장소 컴포넌트 */}
         <DateLocation 
           date="2025년 7월 5일 (토) 낮 12시" 
           venue="고양 파티플라" 
           address="고양 파티플라"
         />
+
+        {/* 카카오톡 공유 버튼 */}
+        <KakaoShare />
+
+        {/* 푸터 (지도 + 연락처 버튼) */}
+        <Footer />
 
         {/* 사진 꾸미기 */}
         <div className="relative flex justify-center mt-6">
