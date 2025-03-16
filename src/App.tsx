@@ -2,6 +2,7 @@ import DateLocation from "./components/DateLocation";
 import RSVP from "./components/RSVP";
 import Footer from "./components/Footer";
 import KakaoShare from "./components/KakaoShare";
+import BGMPlayer from "./components/BGMPlayer";
 
 const App: React.FC = () => {
   return (
@@ -38,6 +39,9 @@ const App: React.FC = () => {
 
         {/* RSVP 컴포넌트 추가 */}
         <RSVP />
+
+        {/* 배경 음악 플레이어 */}
+        <BGMPlayer />
 
         {/* 마스킹 테이프 */}
         <div className="absolute top-0 left-4 bg-yellow-200 w-12 h-4 transform -rotate-6"></div>
