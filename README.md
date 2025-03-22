@@ -1,6 +1,6 @@
 # 박주원 첫번째 생일 초대장 만들기
 # 2025.07.05 12:00
-# 디자인...
+# 디자인... (https://www.figma.com/board/gSD62wwf78D8KLtvYYVKOY/Virtula-Invitation-Template-(Community)?node-id=0-1&p=f&t=qqPDdJC1KLqG1w9g-0)
 
 ✅ 1️⃣ 필수 기능 (기본적인 초대장 기능)
 💡 기본적인 초대장 역할을 수행할 수 있는 기능!
