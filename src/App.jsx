@@ -2,6 +2,7 @@ import './App.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BabyGallery from './components/BabyGallery';
+import BgmPlayer from './components/BgmPlayer';
 import MapImageLink from './components/MapImageLink';
 import ShareButton from './components/ShareButton';
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white flex items-center justify-center p-4">
       <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-6 text-center space-y-6 border border-rose-100">
-        <h1 className="text-4xl font-semibold text-rose-500 mb-2">🎂 주원이의 첫 생일</h1>
+        <h1 className="text-4xl font-semibold text-rose-300 mb-2">🎂 주원이의 첫 생일</h1>
         <BabyGallery />
         {/* <ShareButton /> */}
         {/* <MapImageLink /> */}
@@ -29,7 +30,7 @@ function App() {
           퍼스트타워 804호 <strong>파티플라</strong>
         </p>
         <a
-          href="https://map.kakao.com/link/search/경기 고양시 덕양구 꽃마을로 4 파티플라"
+          href="https://map.naver.com/p/search/%EA%B3%A0%EC%96%91%20%ED%8C%8C%ED%8B%B0%ED%94%8C%EB%9D%BC/place/1135201338?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202506271859&locale=ko&svcName=map_pcv5&searchText=%EA%B3%A0%EC%96%91%20%ED%8C%8C%ED%8B%B0%ED%94%8C%EB%9D%BC"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center justify-center gap-2 mt-6 px-6 py-2 bg-rose-400 text-white font-semibold rounded-full hover:bg-rose-500 transition"
@@ -39,6 +40,8 @@ function App() {
           </svg>
           오시는 길
         </a>
+
+        <BgmPlayer />
 
       </div>
     </div>

@@ -1,0 +1,23 @@
+/* dots 줄바꿈 방지 및 중앙 정렬 */
+.slick-dots {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: nowrap !important;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 0 10px;
+    margin-top: 8px;
+  }
+  
+  /* dots 간격 조정 및 스타일 개선 (선택 사항) */
+  .slick-dots li {
+    margin: 0 4px;
+  }
+  .slick-dots li button:before {
+    font-size: 10px;
+    color: #f472b6; /* Tailwind pink-400 */
+  }
+  .slick-dots li.slick-active button:before {
+    color: #db2777; /* Tailwind pink-600 */
+  }
+  

@@ -9,6 +9,7 @@ import img8 from '../asserts/8.jpeg';
 import img9 from '../asserts/9.jpeg';
 import img10 from '../asserts/10.jpeg';
 import img11 from '../asserts/11.jpeg';
+import '../App.css'; 
 
 const babyImages = [img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
 
@@ -16,11 +17,11 @@ function BabyGallery() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 400,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     arrows: false,
   };
 
