@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white flex items-center justify-center p-4">
       <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full p-6 text-center space-y-6 border border-rose-100">
-        <h1 className="text-4xl font-semibold text-rose-300 mb-2">🎂 주원이의 첫 생일</h1>
+      <h1 className="text-4xl font-hand text-rose-300">🎂 주원이의 첫 생일</h1>
         <BabyGallery />
         {/* <ShareButton /> */}
         {/* <MapImageLink /> */}
